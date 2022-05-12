@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6F1F1"
+    tools:context=".MovieInfoActivity">
+
+    <ImageView
+        android:id="@+id/txtViewFilmImg"
+        android:layout_width="411dp"
+        android:layout_height="210dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/txtViewFilmTitle"
+        android:layout_width="257dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/bangers"
+        android:text="Film Title"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewFilmImg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtViewFilmDate"
+        android:layout_width="93dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="date"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <TextView
+        android:id="@+id/txtViewFilmCountry"
+        android:layout_width="93dp"
+        android:layout_height="21dp"
+        android:fontFamily="@font/roboto"
+        android:text="Country"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656" />
+
+    <TextView
+        android:id="@+id/txtViewFilmSummary"
+        android:layout_width="367dp"
+        android:layout_height="130dp"
+        android:fontFamily="@font/roboto"
+        android:text="Summary"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <Button
+        android:id="@+id/btnFilmActorAdd"
+        android:layout_width="137dp"
+        android:layout_height="35dp"
+        android:text="Add Actor"
+        android:textSize="10sp"
+        app:icon="@drawable/ic_baseline_add_circle_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFilmActor"
+        android:layout_width="323dp"
+        android:layout_height="127dp"
+        android:background="#A6F1F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="176dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/bangers"
+        android:text="List of Actors"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="26dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtViewFilmDate"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603"
+        app:srcCompat="@drawable/ic_baseline_date_range_24" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659"
+        app:srcCompat="@drawable/ic_baseline_my_location_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

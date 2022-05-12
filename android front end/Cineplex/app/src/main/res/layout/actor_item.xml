@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="4dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/actorCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#d8e3e7">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtActorLname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lastname"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.592"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.419" />
+
+            <TextView
+                android:id="@+id/txtActorFname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Firstname"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.367"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.404" />
+
+            <TextView
+                android:id="@+id/txtActorGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.569"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.755" />
+
+            <TextView
+                android:id="@+id/txtActorAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.755" />
+
+            <Button
+                android:id="@+id/btnEditActor"
+                android:layout_width="89dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:background="#084351"
+                android:text="EDIT"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                app:backgroundTint="#084351"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.949"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnDeleteActor"
+                android:layout_width="101dp"
+                android:layout_height="34dp"
+                android:background="#084351"
+                android:text="DELETE"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                app:backgroundTint="#084351"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.99"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEditActor"
+                app:layout_constraintVertical_bias="0.137" />
+
+            <ImageView
+                android:id="@+id/imageView_Actor"
+                android:layout_width="91dp"
+                android:layout_height="134dp"
+                android:src="@drawable/actor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/actor"
+                tools:srcCompat="@drawable/actor" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
